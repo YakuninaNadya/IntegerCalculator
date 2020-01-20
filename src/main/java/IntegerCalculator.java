@@ -1,27 +1,47 @@
 public class IntegerCalculator {
+    int firstNumber;
+    int secondNumber;
 
-    int add(int firstNumber, int secondNumber) {
-        int sum = firstNumber + secondNumber;
+    public int getFirstNumber() {
+        return firstNumber;
+    }
+
+    public void setFirstNumber(int firstNumber) {
+        this.firstNumber = firstNumber;
+    }
+
+    public int getSecondNumber() {
+        return secondNumber;
+    }
+
+    public void setSecondNumber(int secondNumber) {
+        this.secondNumber = secondNumber;
+    }
+
+    public int add() {
+        int sum = getFirstNumber() + getSecondNumber();
         return sum;
     }
 
-    int subtract(int firstNumber, int secondNumber) {
-        int difference = firstNumber - secondNumber;
+    public int subtract() {
+        int difference = getFirstNumber() - getSecondNumber();
         return difference;
     }
 
-    int multiply(int firstNumber, int secondNumber) {
-        int composition = firstNumber * secondNumber;
+    public int multiply() {
+        int composition = getFirstNumber() * getSecondNumber();
         return composition;
     }
 
-    int divide(int firstNumber, int secondNumber) {
-        int quotient = firstNumber / secondNumber;
+    public int divide() {
+        int quotient = getFirstNumber() / getSecondNumber();
         return quotient;
     }
 
     public static void main(String[] args) {
-        IntegerCalculator integerCalculator = new IntegerCalculator();
-        System.out.println(integerCalculator.divide(3, 4));
+//        IntegerCalculator integerCalculator = new IntegerCalculator();
+//        integerCalculator.setFirstNumber(3);
+//        integerCalculator.setSecondNumber(4);
+//        int result = integerCalculator.add();
     }
 }
