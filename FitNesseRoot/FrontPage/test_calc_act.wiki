@@ -1,0 +1,52 @@
+Action Fixture
+
+!path /Users/nyakunina/IdeaProjects/IntegerCalculator/target/classes
+
+
+!|CalculatorExample.IntegerCalculatorActFixture     |
+|start|CalculatorExample.IntegerCalculatorActFixture|
+|enter|setFirstNumber               |3              |
+|enter|setSecondNumber              |5              |
+|check|checkAdd                     |8              |
+|enter|setFirstNumber               |9              |
+|enter|setSecondNumber              |2              |
+|check|checkAdd                     |11             |
+|enter|setFirstNumber               |0              |
+|enter|setSecondNumber              |0              |
+|check|checkAdd                     |0              |
+
+!|CalculatorExample.IntegerCalculatorActFixture     |
+|start|CalculatorExample.IntegerCalculatorActFixture|
+|enter|setFirstNumber               |5              |
+|enter|setSecondNumber              |3              |
+|check|checkSubtract                |2              |
+|enter|setFirstNumber               |2              |
+|enter|setSecondNumber              |0              |
+|check|checkSubtract                |2              |
+|enter|setFirstNumber               |0              |
+|enter|setSecondNumber              |8              |
+|check|checkSubtract                |-8             |
+
+!|CalculatorExample.IntegerCalculatorActFixture     |
+|start|CalculatorExample.IntegerCalculatorActFixture|
+|enter|setFirstNumber               |5              |
+|enter|setSecondNumber              |3              |
+|check|checkMultiply                |15             |
+|enter|setFirstNumber               |9              |
+|enter|setSecondNumber              |0              |
+|check|checkMultiply                |0             |
+|enter|setFirstNumber               |0              |
+|enter|setSecondNumber              |0              |
+|check|checkMultiply                |0              |
+
+!|CalculatorExample.IntegerCalculatorActFixture     |
+|start|CalculatorExample.IntegerCalculatorActFixture|
+|enter|setFirstNumber             |15                |
+|enter|setSecondNumber            |5                |
+|check|checkDivide                |3                |
+|enter|setFirstNumber             |9                |
+|enter|setSecondNumber            |2                |
+|check|checkDivide                |4                |
+|enter|setFirstNumber             |0                |
+|enter|setSecondNumber            |0                |
+|check|checkDivide                |error            |

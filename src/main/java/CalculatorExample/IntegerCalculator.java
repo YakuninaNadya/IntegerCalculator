@@ -1,4 +1,9 @@
+package CalculatorExample;
+
 public class IntegerCalculator {
+    public IntegerCalculator() {
+
+    }
     int firstNumber;
     int secondNumber;
 
@@ -18,23 +23,23 @@ public class IntegerCalculator {
         this.secondNumber = secondNumber;
     }
 
-    public int add() {
-        int sum = getFirstNumber() + getSecondNumber();
+    public int add(int firstNumber, int secondNumber) {
+        int sum = firstNumber + secondNumber;
         return sum;
     }
 
-    public int subtract() {
-        int difference = getFirstNumber() - getSecondNumber();
+    public int subtract(int firstNumber, int secondNumber) {
+        int difference = firstNumber - secondNumber;
         return difference;
     }
 
-    public int multiply() {
-        int composition = getFirstNumber() * getSecondNumber();
+    public int multiply(int firstNumber, int secondNumber) {
+        int composition = firstNumber * secondNumber;
         return composition;
     }
 
-    public int divide() {
-        int quotient = getFirstNumber() / getSecondNumber();
+    public int divide(int firstNumber, int secondNumber) {
+        int quotient = firstNumber / secondNumber;
         return quotient;
     }
 
